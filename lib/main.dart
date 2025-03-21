@@ -13,7 +13,7 @@ class QuizApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: const HomeScreen(), // تغيير الصفحة الرئيسية لجعل العنوان في المنتصف
+      home: const HomeScreen(), 
     );
   }
 }
@@ -32,11 +32,11 @@ class HomeScreen extends StatelessWidget {
             const Text(
               'Quiz App',
               style: TextStyle(
-                fontSize: 35, // تكبير الخط
-                fontWeight: FontWeight.bold, // جعله عريض
+                fontSize: 35, 
+                fontWeight: FontWeight.bold, 
               ),
             ),
-            const SizedBox(height: 20), // إضافة مسافة بين العنوان والزر
+            const SizedBox(height: 20), 
             ElevatedButton(
               onPressed: () {
                 Navigator.pushReplacement(
